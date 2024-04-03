@@ -1,0 +1,162 @@
+body {
+  background-image: linear-gradient(to bottom, #386d37, #262626);
+}
+
+html {
+  height: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navContainer {
+  background-color: #caf3ce;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 1rem;
+}
+.profileImage {
+  border-radius: 50%;
+  width: 110%;
+  height: 110%;
+  margin-left: 20%;
+  margin-top: 20%;
+  filter: drop-shadow(20px 20px 2rem #000000);
+  display: block;
+}
+
+.columnsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.heading h1 {
+  font-family: 'Inter', sans-serif;
+  color: #caf3ce;
+  font-size: 6rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  opacity: 0; /* Initially hide the heading */
+  animation: slideIn 1s forwards; /* Animate the heading in */
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 10%;
+  width: 100%;
+}
+
+.myButton {
+  font-family: 'Inter', sans-serif;
+  color: #374e37;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  background-color: #caf3ce;
+  transition: transform 0.2s ease;
+  pointer-events: auto;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+}
+
+.myButton:hover {
+  background-color: #a5d6a7; /* Change background color on hover */
+  cursor: pointer;
+}
+
+.myButton:focus {
+  border-color: #262626; /* Change border color when button is focused */
+  box-shadow: 0 0 0 2px #262626; /* Add focus ring */
+}
+
+.buttonsContanier {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0; /* Initially hide the buttons */
+  animation: fadeIn 0.5s forwards; /* Animate the buttons in */
+  animation-delay: 1s; /* Delay the animation start */
+
+  width: 80%;
+}
+
+.buttonWrapper {
+  opacity: 0;
+  /* Apply the animation to the wrapper element */
+  animation: fadeIn 0.5s forwards; /* Adjust duration as needed */
+  animation-delay: 1s; /* Delay the animation start */
+  margin: 0;
+}
+
+.myButton:active {
+  /* Apply the pushed effect when the button is clicked */
+  transform: translateY(10px); /* Move the button down by 2 pixels */
+}
+
+.welcomeText {
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  color: #caf3ce;
+  font-size: 2rem;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1rem;
+  opacity: 0; /* Initially hide the welcome text */
+  animation: slideIn 1s forwards 0.5s; /* Animate the welcome text in */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-200px); /* Start from top */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move down */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with no opacity */
+    transform: scale(0); /* Start with small size */
+    transform-origin: center; /* Set the origin to the center */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End with original size */
+    transform-origin: center; /* Maintain the origin at the center */
+  }
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
