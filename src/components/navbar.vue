@@ -38,7 +38,7 @@ export default {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -50,6 +50,7 @@ export default {
   font-size: 35px;
   font-family: 'Inter', sans-serif;
   margin-top: 12px;
+  margin: 0 4rem;
 }
 
 .navLink:hover {
@@ -58,5 +59,42 @@ export default {
 
 .active {
   border-bottom: 2px solid #374e37;
+}
+
+@media (max-width: 1364px) {
+  .navLink {
+    font-size: 25px;
+    margin: 0 2rem;
+  }
+
+  .navContainer.navContainer {
+    width: 100%;
+    height: 50px;
+  }
+
+  .navLink {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 836px) {
+  .navLink {
+    font-size: 15px;
+    margin: 0 1rem;
+  }
+
+  .navLink {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 487px) {
+  .navLink {
+    font-size: 12px;
+    margin: 0 1rem;
+  }
+
+  .navLink {
+    margin-top: 10px;
+  }
 }
 </style>

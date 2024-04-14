@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  <div class="gridContainer">
+  <div class="gridContainer2">
     <div class="contactContainer" @click="copyToClipboard('samuel_yarhi@outlook.com')">
       <img src="../assets/email.png" alt="Email" class="image" />
       <p class="imageText">samuel_yarhi@outlook.com</p>
@@ -76,6 +76,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.gridContainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contactContainer {
   display: flex;
@@ -121,6 +126,20 @@ export default {
     opacity: 1;
     transform: scale(1); /* End with original size */
     transform-origin: center; /* Maintain the origin at the center */
+  }
+}
+
+@media (max-width: 1000px) {
+  .contactTitle {
+    font-size: 4rem;
+  }
+
+  .imageText {
+    font-size: 1rem;
+  }
+
+  .gridContainer2 {
+    flex-direction: column;
   }
 }
 </style>

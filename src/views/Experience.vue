@@ -98,6 +98,14 @@ export default {
 
 .cib {
   margin-top: 2rem;
+  height: 30%;
+  width: 30%;
+}
+
+.codeStack {
+  margin-top: 2rem;
+  height: 30%;
+  width: 30%;
 }
 
 .link {
@@ -174,6 +182,21 @@ export default {
   to {
     opacity: 1;
     transform: translateX(0); /* Move to left */
+  }
+}
+
+@media (max-width: 836px) {
+  .experienceTitle {
+    font-size: 4rem;
+  }
+
+  .experienceText,
+  .experienceTextAnimated {
+    font-size: 1rem;
+  }
+
+  .link {
+    font-size: 1.25rem;
   }
 }
 </style>

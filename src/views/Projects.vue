@@ -207,4 +207,10 @@ accordionHeaders.forEach(function (header) {
   opacity: 1;
   max-height: 1000px;
 }
+
+@media (max-width: 836px) {
+  .faq {
+    max-width: 80%;
+  }
+}
 </style>

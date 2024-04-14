@@ -25,10 +25,6 @@ export default {
 </script>
 
 <style>
-.faq {
-  /* Add margin to align answer with question */
-}
-
 .answer {
   /* Match styling with question */
   font-family: 'Inter', sans-serif;

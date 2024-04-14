@@ -123,6 +123,7 @@ export default {
   text-align: center;
   cursor: pointer;
   outline: none;
+  position: fixed;
 }
 
 .swiper-button-prev {
@@ -152,7 +153,6 @@ export default {
 .textContainer {
   display: flex;
   flex-direction: column;
-
   opacity: 0;
   animation: slideInFromRight 1s forwards 1s;
 }
@@ -229,6 +229,72 @@ body {
   to {
     opacity: 1;
     transform: translateX(0); /* Move to left */
+  }
+}
+
+@media (max-width: 1364px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .rowContainer,
+  .rowContainer2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide2text {
+    font-size: 1.5rem;
+    max-width: 48%;
+    text-align: justify;
+  }
+
+  .rowContainer3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-left: 25%;
+  }
+
+  .dummy {
+    margin-right: 60%;
+  }
+  .slide3text {
+    font-size: 1.5rem;
+    text-align: justify;
+    align-self: center;
+  }
+
+  .djImage1 {
+    width: 20%;
+    height: 20%;
+    margin-top: 2.5rem;
+    margin-right: 0;
+  }
+
+  .djImage2 {
+    display: none;
+  }
+
+  .textContainer {
+    align-items: center;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 836px) {
+  .swiper-button-prev {
+    margin-left: 2rem;
+  }
+
+  .swiper-button-next {
+    margin-right: 2rem;
   }
 }
 </style>
