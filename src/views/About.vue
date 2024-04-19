@@ -297,4 +297,55 @@ body {
     margin-right: 2rem;
   }
 }
+
+@media (max-width: 375px) {
+  .gradImage {
+    width: 50%;
+    height: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .swiper-button-next {
+    margin-right: 0px;
+    width: 3%;
+    height: 3%;
+  }
+
+  .swiper-button-prev {
+    margin-left: -9px;
+    width: 3%;
+    height: 3%;
+  }
+
+  .text {
+    font-size: 1.5rem;
+    max-width: 65%;
+  }
+
+  .djImage1 {
+    width: 40%;
+    height: 40%;
+    margin-top: 2.5rem;
+    margin-right: 0;
+  }
+
+  .slide2text {
+    font-size: 1.5rem;
+    max-width: 65%;
+    text-align: justify;
+  }
+
+  .slide3text {
+    font-size: 1.5rem;
+    max-width: 65%;
+    text-align: justify;
+    margin-left: -20px;
+  }
+
+  .dummy {
+    width: 40%;
+    height: 40%;
+  }
+}
 </style>

@@ -142,4 +142,18 @@ export default {
     flex-direction: column;
   }
 }
+@media (max-width: 450px) {
+  .contactTitle {
+    font-size: 3rem;
+  }
+
+  .image {
+    width: 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .imageText {
+    font-size: 0.8rem;
+  }
+}
 </style>

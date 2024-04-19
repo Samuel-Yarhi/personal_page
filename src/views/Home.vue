@@ -4,19 +4,25 @@ export default {
   methods: {
     navigateToAbout() {
       this.$router.push('/about')
+      this.scrollToTop() // Scroll to top when navigating
     },
     navigateToProjects() {
       this.$router.push('/projects')
+      this.scrollToTop() // Scroll to top when navigating
     },
     navigateToExperience() {
       this.$router.push('/experience')
+      this.scrollToTop() // Scroll to top when navigating
     },
     navigateToContact() {
       this.$router.push('/contact')
+      this.scrollToTop() // Scroll to top when navigating
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' }) // Scroll to top of the page
     }
   },
   components: {
-    // Import the Navbar component
     Navbar
   }
 }

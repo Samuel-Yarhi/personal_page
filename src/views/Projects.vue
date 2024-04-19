@@ -213,4 +213,13 @@ accordionHeaders.forEach(function (header) {
     max-width: 80%;
   }
 }
+@media (max-width: 500px) {
+  .projectsTitle {
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+}
 </style>

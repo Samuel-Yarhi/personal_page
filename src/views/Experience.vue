@@ -199,4 +199,9 @@ export default {
     font-size: 1.25rem;
   }
 }
+@media (max-width: 350px) {
+  .experienceTitle {
+    font-size: 2rem;
+  }
+}
 </style>

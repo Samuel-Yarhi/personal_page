@@ -68,7 +68,7 @@ export default {
   }
 
   .navContainer.navContainer {
-    width: 100%;
+    width: 104%;
     height: 50px;
   }
 
@@ -95,6 +95,14 @@ export default {
 
   .navLink {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navLink {
+    font-size: 10px;
+    margin: 0 0.75rem;
+    margin-top: 5px;
   }
 }
 </style>

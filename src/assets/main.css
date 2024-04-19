@@ -1,5 +1,6 @@
 body {
   background-color: #386d37;
+  width: 100%;
 }
 
 html {
@@ -152,6 +153,9 @@ html {
 }
 
 @media (max-width: 1300px) {
+  html {
+    overflow-x: hidden;
+  }
   .heading h1 {
     font-size: 2.75rem;
     text-align: center;
